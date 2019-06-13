@@ -83,7 +83,7 @@ CONFIG(debug,debug | release){
     QT_IMAGEPLUGINS_BIN_FILES += \
     $$[QT_INSTALL_PLUGINS]/imageformats/qico.dll \
     $$[QT_INSTALL_PLUGINS]/imageformats/qjpeg.dll
-    QT_PLATFORMS_BIN_PATH = $$OUT_PWD/debug/imageformats/
+    QT_PLATFORMS_BIN_PATH = $$OUT_PWD/release/imageformats/
     win32 {
         for(var, QT_IMAGEPLUGINS_BIN_FILES) {
             QMAKE_POST_LINK += $$quote(cmd /c xcopy /y $$shell_path($$var) $$shell_path($$QT_PLATFORMS_BIN_PATH) $$escape_expand(\\n\\t))
