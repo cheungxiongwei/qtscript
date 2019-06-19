@@ -5,4 +5,5 @@ Update submodule:
 ```
 git submodule init
 git submodule update
+git submodule update --remote
 ```
